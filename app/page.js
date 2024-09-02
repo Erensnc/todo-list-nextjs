@@ -2,7 +2,6 @@
 import { useState, useEffect } from "react";
 
 export default function Home() {
-  // Başlangıçta localStorage'dan veriyi al
   const [mainTask, setMainTask] = useState(() => {
     const storedTasks = localStorage.getItem("tasks");
     return storedTasks ? JSON.parse(storedTasks) : [];
